@@ -17,15 +17,15 @@ public class HashMap_Usage {
 
         HashMap<Integer,String> hm = new HashMap<Integer, String>();
 
-        hm.put(1,"Hayriye");
-        hm.put(2,"Nurşen");
-        hm.put(3,"Kadir");
-        hm.put(4,"Gamze");
-        hm.put(5,"Burak");
+        hm.put(1,"Enes");
+        hm.put(2,"Kerim");
+        hm.put(3,"Mert");
+        hm.put(4,"Atakan");
+        hm.put(5,"Taha");
         hm.put(6,"Ahmet");
 
             for(int i=0; i< hm.size();i++) {
-                System.out.println("AKAN Ailesinin üyeleri : \t"+hm.get(i+1));
+                System.out.println("KTC Ailesinin üyeleri : \t"+hm.get(i+1));
 
             }
     }
