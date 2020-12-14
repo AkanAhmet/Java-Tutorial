@@ -1,4 +1,4 @@
-package Design_Patterns.Singleton;
+package Design_Patterns.Singleton_Design;
 
 class threaddeneme implements Runnable{
     @Override
