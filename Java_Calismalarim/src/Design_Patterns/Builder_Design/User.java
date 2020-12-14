@@ -1,12 +1,16 @@
 package Design_Patterns.Builder_Design;
 
+
+// Inner Class olarak UserBuilder oluşturuldu.
+// public User(UserBuilder userBuilder) constructor u eklendi.
+// Lombok (@Builder) ile bu patterni oluşturmadan kullanılabilir.
 public class User {
 
-    private  String name;
-    private  String surname;
-    private int age;
-    private  String phone;
-    private  String address;
+    private  final String name;
+    private  final String surname;
+    private  final int age;
+    private  final String phone;
+    private  final String address;
 
     public User(UserBuilder userBuilder) {
         this.name = userBuilder.name;
@@ -20,35 +24,18 @@ public class User {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getSurname() {
         return surname;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-
     public String getPhone() {
         return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
     }
 
     public String getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
-    public void setAge(int age) { this.age = age; }
     public int getAge() { return age; }
 
     @Override
