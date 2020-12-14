@@ -2,7 +2,7 @@ package src.Algoritmalar;
 
 import static java.lang.Math.*;
 
-public class MükemmerlSayı {
+public class MükemmelSayi {
 
     void mükemmelSayi(int x) {
         if(x>=100 && x <=999) {
@@ -19,9 +19,9 @@ public class MükemmerlSayı {
             }}    }
 
     public static void main(String[] args) {
-            MükemmerlSayı mükemmerlSayı = new MükemmerlSayı();
+            MükemmelSayi mükemmelSayi = new MükemmelSayi();
             for(int i=0;i<1000;i++)
-                mükemmerlSayı.mükemmelSayi(i);
+                mükemmelSayi.mükemmelSayi(i);
 
     }
 }
