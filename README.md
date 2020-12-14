@@ -10,7 +10,7 @@ Kullanılan diğer araçlar ;
 
 MIT License
 
-Copyright (c) [2020] [Ahmet AKAN]
+Copyright (c) 2020 Ahmet AKAN
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
