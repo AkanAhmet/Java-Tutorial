@@ -1,0 +1,179 @@
+							* BAZI GENEL ÖZELLİKLER *
+							
+LOGO - AKAN-SERİF20
+BUTTON - WİDGET.MATERİAL.BUTTON.COLORED
+styles.xml -  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"> //Bottom template seçince çalışmadı
+------------------------------------------------------------------------------------------------------------------
+						* Activity Life Cycle: *
+onCreate() { super.onCreate(savedInstanceState); } => tamamen kapanıp tekrar açılma
+onStart() { super.onStart(savedInstanceState); }
+onResume() { super.onResume(savedInstanceState); }  => Uygulamayı arka plana atıp sonra tekrar kullanıma getirirse
+------------------------------------------------------------------------------------------------------------------
+						* MODEL VIEW CONTROLLER *
+Mainde nesneyi bulma :final TextView textView1=findViewById(R.id.textView1);
+-------------------------------------------------------------------------------------------------------------------
+					* VERİ TİPİ DÖNÜŞÜMLERİ *
+String to Integer ==>  int sayi1= Integer.parseInt(textView1.getText().toString());
+
+Integer to String ==>  String yazi= String.valueOf(sayi);
+----------------------------------------------------------------------------------------------------------------------
+						* ROTATION *
+						
+TELEFON EKRANINI DÖNDÜRDÜĞÜNDE OTOMATİK UYUM SAĞLANSIN: 
+androidmanifest.xml içinde ==>
+<activity android:name=".MainActivity" android:screenOrientation="sensor">
+            android:screenOrientation="sensor"
+GÖRÜNTÜ BOZULMALARINI ENGELLEMEK İÇİN ==> Create landscape variation a tıkla
+bu sayede yatay tutuş için ayrı bir xml dosyan olacak
+------------------------------------------------------------------------------------------------------------------
+						* BUTTON ONCLICK *
+public void yap(View view) {  }  ==> butonun onclickini ayarla
+
+kabul= findViewById(R.id.button);
+        kabul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
+            }
+        });
+---------------------------------------------------------------------------------------------------------------------
+
+						* IMAGEVIEW *
+						
+Image View deki Resmi Değiştirme :
+public void changeImage(View view) {
+        ImageView iv =findViewById(R.id.resim);
+        iv.setImageResource(R.drawable.yeniresminismi);
+    }
+------------------------------------------------------------------------------------------------------------------
+						* INTENT *
+						
+Yeni aktivite oluşturma : JAVA Klasörüne sağ tık->new Activity-> Empty Activity
+Aktiviteler arası Veri Gönderme Intent ile sağlanır:
+
+Gönderen Taraf ==>
+
+private void gonder() { // bu method oncreate içinden çağrılır
+
+Intent intent = new Intent(this,ikinciaktivitejava.class);
+intent.putExtra("data",edittextverisi.getText().toString());
+startActivity(intent);
+
+ }
+
+Alıcı Taraf ==>
+
+private void parseIntent() {  // bu method 2. aktivitede oncreate methoduyla çağrılır
+
+Intent intent=getIntent();
+String data= intent.getStringExtra("data");
+
+
+ }
+
+
+------------------------------------------------------------------------------------------------------------------
+					* SHARED PREFERENCES * YEREL DEPOLAMA *
+Küçük bilgileri depolamak;
+SharedPreferences sp; => üSTTE
+sp= this.getSharedPreferences("enüsttekipaketismi",mod=Context.MODE_PRIVATE) => Oncreate içinde
+sp.edit.putInt("anahtarkelime","değer").apply();  => VERİ EKLEME
+int yereldepolanandeger= sp.getInt("anahtarkelime",defValue:0(anahtarkelimebulunamazsaverilecekdeger));  => VERİ ÇEKME - Uygulama başlatıldığında lazım OLABİLİR
+sp.edit.remove("anahtarkelime").apply(); ->VERİ SİLMEK
+------------------------------------------------------------------------------------------------------------------
+
+
+
+					* UYARI MESAJLARI * 
+
+Toast Bildirimi Oluşturma ==> Toast.makeText(MainActivity.this,"ahmet",Toast.LENGTH_SHORT).show();
+Toast mytoast; -> mytoast.setGravity(Gravity.CENTER,0,0);
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Çalışmıyor, araştır.
+AlertDialog.Builder alert= new AlertDialog.Builder(this);
+alert.setTitle("Save");
+alert.setMessage("Are you sure?");
+alert.setPositiveButton("Yes",new DialogInterface.OnClickListener() {
+	@Override
+	public void OnClick(DialogInterface dialog, int which) {
+		Toast.makeText(MainActivity.this,"Evete basıldı",Toast.LENGTH_LONG).show();
+	}
+    });
+alert.setNegativeButton("No",new DialogInterface.OnClickListener() {
+	@Override
+	public void OnClick(DialogInterface dialog, int which) {
+		Toast.makeText(MainActivity.this,"Hayıra basıldı",Toast.LENGTH_LONG).show();
+	}
+    });
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Çalışmıyor, araştır.
+----------------------------------------------------------------------------------------------------------------------
+					* COUNTDOWN TIMER *
+ new CountDownTimer(10000,1000) {  //kaçtangerisayılacak,süre ne kadar azalacak 
+
+            @Override
+            public void onTick(long millisUntilFinished) {  // her bir azalımda ne yapılacak
+                textView.setText("Left: " + millisUntilFinished / 1000);
+            }
+
+            @Override
+            public void onFinish() { // süre bitince ne yapılacak
+
+                Toast.makeText(getApplicationContext(),"Done!",Toast.LENGTH_LONG).show();
+                textView.setText("Finished!");
+
+            }
+        }.start();  // bunu yazdığın an başlıyor.
+----------------------------------------------------------------------------------------------------------------------
+					* RUNNABLE - HANDLER - KRONOMETRE *
+
+    public void start (View view) {
+
+        handler = new Handler();
+
+        runnable = new Runnable() {
+            @Override
+            public void run() {
+                textView.setText("Time: " + number);
+                number++;
+                textView.setText("Time: " + number);
+                handler.postDelayed(runnable,1000);
+
+            }
+        };
+
+        handler.post(runnable);
+        button.setEnabled(false);
+
+    }
+
+    public void stop (View view) {
+        button.setEnabled(true);
+
+        handler.removeCallbacks(runnable);
+        number = 0;
+        textView.setText("Time: " + number);
+
+    }
+----------------------------------------------------------------------------------------------------------------------
+							* FRAGMENTLER  *
+					
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------
