@@ -5,7 +5,7 @@ package OOP;
 public class Main {
     public static void main(String[] args) {
         //  referans      //obje
-        Car araba   =  new Car();
+        Car araba   =  new Car();  // new kelimesi kullanılmazsa Hata verir çalışmaz.
         araba.setAge(30);
         araba.setColor("Red");
         araba.setEngine(45.5f);

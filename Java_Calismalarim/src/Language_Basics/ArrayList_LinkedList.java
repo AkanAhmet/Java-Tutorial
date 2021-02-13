@@ -31,7 +31,28 @@ public class ArrayList_LinkedList {
         Random rd= new Random();
         ArrayList<String> ar = new ArrayList<>();
 
-       // ArrayList colors= new ArrayList(); colors.add(5);
+        ArrayList<Integer> a = new ArrayList<>();
+        ArrayList<Integer> b = new ArrayList<>();
+        //---------------------------------------------------------------
+        for(int i=1;i<10;i++) {
+            a.add(i);  }
+        for(int i=10;i<15;i++) {
+            b.add(i); }
+
+        a=b; // b deki her değişiklik artık a yıda değiştirir ! A kendi elemanları kayboldu BU İŞELMDEN ONCE A YI YEDEKLEMEK GEREK
+
+        b.set(0,5555);
+        for (Integer x:a ) {
+            System.out.println(x);
+        }
+        System.out.println("");
+        for (Integer x:b ) {
+            System.out.println(x);
+        }
+
+//---------------------------------------------------------------
+
+// ArrayList colors= new ArrayList(); colors.add(5);
         //LinkedList<String> lk = new LinkedList<String>();
 
         ar.add("gamze");
@@ -43,9 +64,9 @@ public class ArrayList_LinkedList {
         if(ar.contains("gamze")) {
             System.out.println("Listede Gamze var");
         }
-        for(String a:ar) {
-            System.out.println("Eleman:\t"+a);
-            
+        for(String aa:ar) {
+            System.out.println("Eleman:\t"+aa);
+
         }
         System.out.println(ar.get(0));
         System.out.println(ar.get(1));
@@ -58,7 +79,7 @@ public class ArrayList_LinkedList {
         //--------------------------------------------------------------------------
 
         ArrayList<Integer> ar2= new ArrayList<Integer>();
-        for(int a=0;a<15;a++) {
+        for(int i=0;i<15;i++) {
             ar2.add(rd.nextInt(100));
         }
 
@@ -67,10 +88,10 @@ public class ArrayList_LinkedList {
         System.out.println("Sıralanmış Hali :");
         Collections.sort(ar2);
 
-        for(int a=0;a<ar2.size();a++) {
-            System.out.println(ar2.get(a));
+        for(int j=0;j<ar2.size();j++) {
+            System.out.println(ar2.get(j));
         }
-    //-------------------------------------------------------------------------------------------
+        //-------------------------------------------------------------------------------------------
         Iterator<Integer> it = ar2.iterator();
         int eleman = it.next();
         System.out.println(eleman);
@@ -84,8 +105,6 @@ public class ArrayList_LinkedList {
             int deger = it.next();
             System.out.println(deger);
         }
-
-
 
     }
 
