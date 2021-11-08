@@ -4,8 +4,8 @@ package Language_Basics;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 
-// HashSet  2 tane Aynı değerden İçeremez.  -> DISTINCT
-// HashSet Öğeleri Sıra Sıra eklemez. O yüzden get() metodu içermez.
+// HashSet  2 tane Aynı değeri İçeremez.  -> DISTINCT
+// HashSet elemanlar arasında Sıra gözetmez. O yüzden get() metodu içermez.
 // Fakat LinkedHashSet sıra sıra ekler.
 public class SETS_COLLECTION {
     public static void main(String[] args) {

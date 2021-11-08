@@ -30,3 +30,35 @@ public class Methods {
 
     }
 }
+
+//-------------------------------------------------------------------------------------------------------------------------
+    //Method OVERRIDING =>
+
+class A{
+    public void print() {
+        System.out.println("A");
+    }
+}
+
+class B extends A {
+    A a = new A () {
+        @Override
+        public void print() {   // ANONYMOUS CLASS CAN'T REDUCE VISIBILITY
+            System.out.println("b");
+        }
+    };
+}
+
+class C extends A {
+
+    @Override
+   public void print() {
+        System.out.println("c");
+    }
+    public static void main(String[] args) {
+        A a = new A();
+        C c = new C();
+        c.print();
+    }
+}
+

@@ -1,4 +1,4 @@
-package src.Algoritmalar;
+package Algorithms;
 
 import static java.lang.Math.*;
 

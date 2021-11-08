@@ -1,6 +1,5 @@
 package OOP;
-//Büyük bir projede her yerden erişilmesini istediğimiz(static) değiştirilmesini istemediğimiz(final)
-//değerler için public static final kullanırız.
+
 class students{
 
      final int sondeger=15; // finalin değeri ya tanımlanırken yada constructor içinde verilebilir sadece.
@@ -18,5 +17,6 @@ public class Static_Final {
         students st2 = new students();
         students st3 = new students();
         System.out.println(students.ogr_sayisi);
+        System.out.println(st1.ogr_sayisi);
     }
 }

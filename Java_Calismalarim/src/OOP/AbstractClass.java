@@ -1,6 +1,6 @@
 package OOP;
 // Abstraction=> Soyutlama demektir. İç detaylar gizlenerek sadece işlev gösterilir
-// mesela araba sürerken sadece pedal ve direksiyonu kullanırız, motor ve yakıtı görmeyiz.
+// mesela araba sürerken sadece pedal ve direksiyonu kullanırız, motor ve yakıtı ,yüzlerce parça hakkında bilgimiz yoktur.
 // ABSTRACTCLASS lar hem gövdesiz hem gövdeli fonksiyonları tutabilir. Constructor içerebilir.
 //örneğin, interface için kullandığımız add metodu tüm databaseler için ortak olsun,
 // bunu gövdeli bir şekilde yazarız diğer(update,get) metodları gövdesiz bırakırız.

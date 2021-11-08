@@ -1,7 +1,5 @@
 package OOP;
 
-// HASHCODE VE EQUALSIN ÖNEMİNE BAK
-
 class Family {
 
     private String name;

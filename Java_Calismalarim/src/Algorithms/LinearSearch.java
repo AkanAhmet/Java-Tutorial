@@ -1,4 +1,4 @@
-package src.Algoritmalar;
+package Algorithms;
 
 import java.util.Random;
 import java.util.Scanner;

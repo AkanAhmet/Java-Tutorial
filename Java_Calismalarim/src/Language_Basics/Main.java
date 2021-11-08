@@ -1,9 +1,9 @@
 package Language_Basics;
 //https://docs.oracle.com/javase/tutorial/java/index.html
-// Temel kütüphane => java.util.Scanner , list-arraylist-date-hash
+// Temel kütüphane => java.util , list-arraylist-date-hash
 
 /*
-// Static olmayan methoda ulaşmak için önce o sınıftan new kelimesi bir obje yaratılır.
+// Static(Sınıfa ait, objeye değil) olmayan methoda ulaşmak için önce o sınıftan new kelimesi ile bir obje yaratılır.
 
 Deneme deneme = new Deneme(); // Obje oluşturuldu
 
