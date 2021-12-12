@@ -1,4 +1,4 @@
-package Language_Basics;
+package JavaCores;
 enum Level {
     LOW,
     MEDIUM,

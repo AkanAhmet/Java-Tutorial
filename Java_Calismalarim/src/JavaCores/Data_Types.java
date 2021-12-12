@@ -1,7 +1,8 @@
-package Language_Basics;
+package JavaCores;
 
 public class Data_Types {
     public static void main(String[] args) {
+        // Referans veri tipleri => Array, Class, Interface
         // İlkel ( Primitive ) Veri Tipleri =>
         byte mybyte; mybyte=  120; //-128 ile +127 arası değer alır. Büyüklüğü 8 bit tir.
         short myshort; myshort= 25105; //32768 ile +32767 arası değer alır.Büyüklüğü 16 bit tir.

@@ -1,4 +1,4 @@
-package Language_Basics;
+package JavaCores;
 // String ->  java.lang.String
 public class Arrays {
     public static void main(String[] args) {

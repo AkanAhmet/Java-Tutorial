@@ -7,7 +7,7 @@ class threaddeneme implements Runnable{
     }
 }
 
-public class Singelton_Deneme {
+public class SingeltonDeneme {
 
     public static void main(String[] args) {
         Thread th1 = new Thread(new threaddeneme());

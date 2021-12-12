@@ -1,4 +1,4 @@
-package Language_Basics;
+package JavaCores;
 //https://docs.oracle.com/javase/tutorial/java/index.html
 // Temel kütüphane => java.util , list-arraylist-date-hash
 

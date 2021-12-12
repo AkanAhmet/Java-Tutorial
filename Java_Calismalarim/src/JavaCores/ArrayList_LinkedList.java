@@ -1,11 +1,10 @@
-package Language_Basics;
+package JavaCores;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.Random;
 
-// ArrayList ' i sil LinkedList, kullanımları birebir aynı !!!
 //LinkedList stores the memory address (or link) of the element that follows it.
 // It's called a LinkedList because each element contains a link to the neighboring element.
 
@@ -20,7 +19,7 @@ import java.util.Random;
 //  contains(object o) ,
 //  clear()(Tüm listeyi siler)
 
-// Collections. metodları =>
+// Collections metodları =>
 //sort() , max() , min() , reverse() , shuffle()(Listeyi random karıştırır);
 
 // Listenin içinde kolayca dolanmak için Iterator kullanılır.

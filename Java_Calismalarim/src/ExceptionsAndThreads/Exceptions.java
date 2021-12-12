@@ -1,4 +1,4 @@
-package Last;
+package ExceptionsAndThreads;
 
 //An exception can occur for many different reasons. Some examples:
 //        - A user has entered invalid data.

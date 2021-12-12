@@ -1,4 +1,4 @@
-package Language_Basics;
+package JavaCores;
 
 public class Control_Flow_Statements {
     public static void main(String[] args) {

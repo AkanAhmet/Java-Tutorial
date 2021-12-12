@@ -1,4 +1,4 @@
-package Language_Basics;
+package JavaCores;
 
 public class Strings {
     public static void main(String[] args) {

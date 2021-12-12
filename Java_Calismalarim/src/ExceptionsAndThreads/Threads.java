@@ -1,4 +1,4 @@
-package Last;
+package ExceptionsAndThreads;
 
 // There is 2 ways to use Threads.
 class th1 extends Thread{

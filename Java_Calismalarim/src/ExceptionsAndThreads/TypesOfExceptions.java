@@ -1,4 +1,4 @@
-package Last;
+package ExceptionsAndThreads;
 
 //There are 2 types of Exceptions :  Checked  and Unchecked (Runtime)
 

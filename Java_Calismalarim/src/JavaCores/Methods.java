@@ -1,9 +1,9 @@
-package Language_Basics;
+package JavaCores;
 
 public class Methods {
 
     // OVERLOADİNG Example=> parametre sayısı,tipi ve return tipi değişebilir.
-    // Kullanıcının tamsayı yerine ondalıklı sayı girdiği durumlarda hata ile karşılaşılmaması için önlem niteliğinde..
+    // Kullanıcının tamsayı yerine ondalıklı sayı girdiği durumlarda hata ile karşılaşılmaması gibi problemler için önlem niteliğinde..
     public static int toplama(int sayi1, int sayi2) {
         int sonuc = sayi1 + sayi2;
         return sonuc;

@@ -1,9 +1,7 @@
-package Language_Basics;
+package JavaCores;
 
 import java.util.HashMap;
 
-// Python daki dictionary gibi anahtar - değer çifti tutar
-// ArrayList ve LinkedList ten farkı, 2 parametre alması ,
 // add(object o), yerine put(key, value) kullanılması ve get (key) şeklinde kullanımı.
 
 //  A HashMap cannot contain duplicate keys. Adding a new item with a key that already exists overwrites the old element.
@@ -25,7 +23,7 @@ public class HashMap_Usage {
         hm.put(6,"Ahmet");
 
             for(int i=0; i< hm.size();i++) {
-                System.out.println("KTC Ailesinin üyeleri : \t"+hm.get(i+1));
+                System.out.println("Üyeler : \t"+hm.get(i+1));
 
             }
     }

@@ -1,4 +1,4 @@
-package Language_Basics;
+package JavaCores;
 
 public interface IntelliJ_Keys {
     // ALT + INSERT = GENERATE MENU
