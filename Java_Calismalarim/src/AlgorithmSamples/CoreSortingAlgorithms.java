@@ -1,8 +1,8 @@
-package Algorithms;
+package AlgorithmSamples;
 
 import java.util.Random;
 
-public class Sorting {
+public class CoreSortingAlgorithms {
 
     void printArr(int[] arr) {
         int n= arr.length;
@@ -180,7 +180,7 @@ public class Sorting {
         for(int i=0;i<arr.length;i++) {
             arr[i]= rd.nextInt(50000)+1;
         }
-        Sorting ob = new Sorting();
+        CoreSortingAlgorithms ob = new CoreSortingAlgorithms();
         ob.mergeSort(arr,0,n-1);
         ob.printArr(arr);
 

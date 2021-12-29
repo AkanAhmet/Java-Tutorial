@@ -20,9 +20,10 @@ public class Main {
 
         System.out.println("Merhaba Dünya\t"+"Java notlarıma hoşgeldiniz");
         System.out.println(Math.pow(2,4)+"\t"+Math.sqrt(81));
-        Scanner input=new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
         System.out.println("Lütfen sayi giriniz");
-        int sayi= input.nextInt();
+        int sayi= scanner.nextInt();
+        scanner.close();
         System.out.println("Girilen sayı:\t"+sayi);
         Random rd= new Random();
         int random_number= rd.nextInt(100)+1;
