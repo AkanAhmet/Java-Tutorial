@@ -1,6 +1,5 @@
 package JavaCores;
 
-
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 
@@ -10,23 +9,25 @@ import java.util.LinkedHashSet;
 public class SETS_COLLECTION {
     public static void main(String[] args) {
 
-        HashSet<String> hs = new HashSet<String>();
-        hs.add("duman");
-        hs.add("zıpzıp");
-        hs.add("zıpzıp");
-        hs.add("zıpzıp");
-        hs.add("zıpzıp");
-        hs.add("boncuk");  // Sıralı yazdırmadığına bak.
+        HashSet<String> hashset = new HashSet<String>();
+        hashset.add("Duman");
+        hashset.add("Boncuk");
+        hashset.add("Boncuk");
+        hashset.add("Boncuk");
+        hashset.add("Boncuk");
+        hashset.add("Puf");  // Sıralı yazdırmadığına bak.
 
-        System.out.println("HashSet'in boyutu\t"+hs.size());
-        System.out.println(hs);
+        System.out.println("Size of HashSet:\t"+hashset.size());
+        System.out.println(hashset);
 
-        for( String a: hs) {
+        for( String a: hashset) {
             System.out.println(a);
         }
 
-        LinkedHashSet<String> lhs = new LinkedHashSet<String>();
-        lhs.add("LinkedHashSet"); lhs.add("sıralı"); lhs.add("ekleme"); lhs.add("yapar");
-        System.out.println(lhs);
+        LinkedHashSet<String> linkedHashSet = new LinkedHashSet<String>();
+        linkedHashSet.add("LinkedHashSet"); 
+        linkedHashSet.add("adds"); 
+        linkedHashSet.add("sequentially"); 
+        System.out.println(linkedHashSet);
     }
 }

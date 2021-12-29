@@ -4,6 +4,7 @@ class Threads implements Runnable{
     @Override
     public void run() {
         SingletonPattern singleton = SingletonPattern.getInstance();
+        
     }
 }
 

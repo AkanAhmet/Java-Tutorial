@@ -4,15 +4,17 @@ import java.util.Scanner;
 
 public class PalindromicNumber {
     
-    static void checkPalindrome(int number) {
-        int temp, remainder, sum = 0;
+    static void checkPalindromicNumber(int number) {
+        int temp;
+        int remainder;
+        int sum = 0;
 
         temp = number; // for compare with base number.
 
         while(number>0){    
-            remainder=number%10;  //getting remainder  
+            remainder=number%10;   
             sum=(sum*10)+remainder;    
-            number=number/10;    
+            number /= 10;    
            }    
 
            if(temp==sum)    
@@ -31,7 +33,7 @@ public class PalindromicNumber {
         scanner.close();
         number  = number < 0 ? number * -1 : number;
 
-        checkPalindrome(number);
+        checkPalindromicNumber(number);
 
     }
 }

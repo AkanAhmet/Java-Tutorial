@@ -5,9 +5,11 @@ public class Control_Flow_Statements {
 
         // BREAK = İÇİN DE BULUNDUĞU DÖNGÜYÜ SONLANDIRIR. CONTINUE = Döngüde, sonraki adıma atlama yapar.
         //RETURN METODU SONLANDIRIR.
+        
     // IF - ELSE IF -ELSE =>
         int testscore = 76;
         char grade;
+        grade = ( "55".equals("55") ? 'X': 'W');
 
         if (testscore >= 90) {
             grade = 'A';
@@ -85,6 +87,8 @@ public class Control_Flow_Statements {
         for(int i=1; i<11; i++){
             System.out.println("I is: " + i);
         }
+
+        // for( ; ; ) {}  => infinite Loop with for
 
     }
 }

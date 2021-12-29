@@ -2,9 +2,12 @@ package JavaCores;
 
 public class Data_Types {
     public static void main(String[] args) {
-        // Referans veri tipleri => Array, Class, Interface
-        // İlkel ( Primitive ) Veri Tipleri =>
-        byte mybyte; mybyte=  120; //-128 ile +127 arası değer alır. Büyüklüğü 8 bit tir.
+
+        // Referance data types => Array, Class, Interface
+        //  Primitive  data types =>
+
+        byte mybyte; 
+        mybyte =  120; //-128 ile +127 arası değer alır. Büyüklüğü 8 bit tir.
         short myshort; myshort= 25105; //32768 ile +32767 arası değer alır.Büyüklüğü 16 bit tir.
         char mychar; mychar='A'; mychar= 65; // Harfin Unicode harf karşılığını tutar. Büyüklüğü 16 bit tir. "ASCII TABLE"
         int myint; myint= 150999; //-2.147.483.648 ile 2.147.483.647 arası değer alır. Büyüklüğü 32 bit tir. TAMSAYI

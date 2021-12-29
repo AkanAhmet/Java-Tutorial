@@ -1,24 +1,27 @@
 package ExceptionsAndThreads;
 
 // There is 2 ways to use Threads.
-class th1 extends Thread{
+class ThreadOne extends Thread{
     @Override
     public void run() {
-        System.out.println("İlk Thread");
+        System.out.println("First Thread");
     }
 }
-class th2 extends Thread{
+class ThreadTwo extends Thread{
     @Override
     public void run() {
-        System.out.println("İkinci Thread");
+        System.out.println("Second Thread");
     }
 }
 
 class SecondWay implements Runnable {  // The preferred way is this.
     @Override
     public void run() {
-        System.out.println("Second way thread one.");
+        System.out.println("Second way to implement the thread.");
     }
+
+    /*The Callable interface is similar to Runnable, in that both are designed for classes whose instances are potentially executed by another thread. 
+    /A Runnable, however, does not return a result and cannot throw a checked exception. */
 
 
 }
@@ -26,21 +29,21 @@ public class Threads {
 
     public static void main(String[] args) {
 
-        th1 tr1 = new th1();
-        th2 tr2 = new th2();
+        Thread threadOne = new ThreadOne();
+        Thread threadTwo = new ThreadTwo();
 
         Thread secondway = new Thread(new SecondWay());
         secondway.setPriority(10);
 
 
-            tr1.start();
+            threadOne.start();
             try {
-            tr1.sleep(1000); }
+            Thread.sleep(1000); }
             catch(Exception e) {
                 System.out.println(e);
             }
-            tr2.setPriority(6);  // Priority 0 ile 10 arasındadır, default olarak 5 gelir.
-            tr2.start();
+            threadTwo.setPriority(6);  // Priority 0 ile 10 arasındadır, default olarak 5 gelir.
+            threadTwo.start();
             secondway.start();
 
     }

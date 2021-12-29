@@ -1,6 +1,6 @@
 package JavaCores;
 //https://docs.oracle.com/javase/tutorial/java/index.html
-// Temel kütüphane => java.util , list-arraylist-date-hash
+// Temel kütüphane => java.util.* , list-arraylist-date-hash
 
 /*
 // Static(Sınıfa ait, objeye değil) olmayan methoda ulaşmak için önce o sınıftan new kelimesi ile bir obje yaratılır.
@@ -9,7 +9,7 @@ Deneme deneme = new Deneme(); // Obje oluşturuldu
 
 deneme.ornekMethod(); //static olmayan methoda ulaşıldı
 
-//Static methoda ulaşmak => Deneme.ornekMethod2();
+//Static methoda ulaşmak => Deneme.ornekMethod();
 */
 
 import java.util.Random;
@@ -18,16 +18,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Merhaba Dünya\t"+"Java notlarıma hoşgeldiniz");
+        System.out.println("Hello World\t"+"Welcome to my Java Studies");
         System.out.println(Math.pow(2,4)+"\t"+Math.sqrt(81));
         Scanner scanner=new Scanner(System.in);
-        System.out.println("Lütfen sayi giriniz");
+        System.out.println("Enter a number please");
         int sayi= scanner.nextInt();
         scanner.close();
         System.out.println("Girilen sayı:\t"+sayi);
-        Random rd= new Random();
-        int random_number= rd.nextInt(100)+1;
-        System.out.println("Rastgele üretilen sayı:\t"+random_number);
+        Random random= new Random();
+        int random_number= random.nextInt(100)+1;
+        System.out.println("This is a random number:\t"+random_number);
 
     }
 }

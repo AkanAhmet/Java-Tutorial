@@ -2,16 +2,16 @@ package JavaCores;
 
 public class Methods {
 
-    // OVERLOADİNG Example=> parametre sayısı,tipi ve return tipi değişebilir.
-    // Kullanıcının tamsayı yerine ondalıklı sayı girdiği durumlarda hata ile karşılaşılmaması gibi problemler için önlem niteliğinde..
-    public static int toplama(int sayi1, int sayi2) {
-        int sonuc = sayi1 + sayi2;
-        return sonuc;
+    // OVERLOADİNG => parametre sayısı,tipi ve return tipi değişebilir.
+    // Kullanıcının tamsayı yerine ondalıklı sayı girdiği durumlarda hata ile karşılaşılmaması gibi problemler için önlem niteliğindedir.
+    public static int add(int num1, int num2) {
+        int result = num1 + num2;
+        return result;
     }
 
-    public static double toplama(double sayi1, double sayi2) {
-        double sonuc = sayi1 + sayi2;
-        return sonuc;
+    public static double add(double num1, double num2) {
+        double result = num1 + num2;
+        return result;
     }
 //-------------------------------------------------------------------------------------------------------------------------
     //RECURSIVE METHOD =>
@@ -24,8 +24,8 @@ public class Methods {
 
     }
     public static void main(String[] args) {
-        System.out.println(toplama(5,6));
-        System.out.println(toplama(3.78,6.54));
+        System.out.println(add(5,6));
+        System.out.println(add(3.78,6.54));
         System.out.println(factorial(5));
 
     }
