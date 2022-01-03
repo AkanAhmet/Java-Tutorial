@@ -1,4 +1,4 @@
-package Design_Patterns.Creational_Design_Patterns.Singleton_Design;
+package design_patterns.creational_design_patterns.Singleton_Design;
 
 public class SingletonPattern {
 

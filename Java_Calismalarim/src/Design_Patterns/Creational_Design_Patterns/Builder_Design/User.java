@@ -1,4 +1,4 @@
-package Design_Patterns.Creational_Design_Patterns.Builder_Design;
+package design_patterns.creational_design_patterns.Builder_Design;
 
 
 // Inner Class olarak UserBuilder oluşturuldu.

@@ -1,4 +1,4 @@
-package Design_Patterns.Creational_Design_Patterns.Factory_Design;
+package design_patterns.creational_design_patterns.Factory_Design;
 
 // Model sayısı arttıkça ELSE - IF sayısıda artacak, bu sorunu abstractfactory çözer
 public class TelefonFabrikası {
