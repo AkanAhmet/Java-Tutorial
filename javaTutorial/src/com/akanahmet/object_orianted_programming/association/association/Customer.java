@@ -1,4 +1,4 @@
-package com.akanahmet.object_orianted_programming.composition_and_association.association;
+package com.akanahmet.object_orianted_programming.association.association;
 
 public class Customer {
 

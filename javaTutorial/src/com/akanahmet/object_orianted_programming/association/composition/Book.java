@@ -1,4 +1,4 @@
-package com.akanahmet.object_orianted_programming.composition_and_association.composition;
+package com.akanahmet.object_orianted_programming.association.composition;
 
 import java.io.Serializable;
 
