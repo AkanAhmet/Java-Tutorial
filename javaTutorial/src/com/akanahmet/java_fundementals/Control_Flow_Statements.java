@@ -5,7 +5,14 @@ public class Control_Flow_Statements {
 
         // BREAK = İÇİN DE BULUNDUĞU DÖNGÜYÜ SONLANDIRIR. CONTINUE = Döngüde, sonraki adıma atlama yapar.
         //RETURN METODU SONLANDIRIR.
-        
+
+     // TERNARY OPERATOR =>
+
+        int num=5;
+        String ternary= (num==5) ?"number is 5"  :"number isn't 5" ;
+        System.out.println(ternary);
+
+
     // IF - ELSE IF -ELSE =>
         int testscore = 76;
         char grade;

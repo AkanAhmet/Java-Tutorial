@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 // Dosya işlemlerinde try-catch kullanılır.
 
-public class File_Operations {
+public class FileOperations {
 
     //File CREATE=>
     public static void main(String[] args) {
