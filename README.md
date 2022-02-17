@@ -6,6 +6,7 @@ This tutorial includes;
 - Java Collections
 - Java Exception Handling and Threads
 - Object Orianted Programming Concepts
+- Creational Design Patterns
 - Algorithm Examples
 
 
